@@ -1,0 +1,301 @@
+/* ANIMATIONS */
+@keyframes tt {
+                    from {opacity: 0%; }
+                    to {opacity: 100%; }
+                }
+@keyframes windows {
+                    from {opacity: 0%; top: -10px;}
+                    to {opacity: 100%; top: 0px;}
+                }
+
+/* GENERAL */
+
+body{
+    background-color: #FFE9F7;
+    margin-top: 0;
+    margin-left: 0;
+}
+#warning{
+    display: none;
+}
+#windows{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 36px;
+    width: 845px;
+    height:670px;
+}
+.bar{
+    z-index: 1;
+    display:block;
+    position: absolute;
+    padding: 5px;
+    background-color: #FEA9D4;
+    border: 0 solid;
+    border-radius: 10px 10px 0px 0px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 18px;
+    text-indent: 5px;
+    color: #FFF5FB;
+}
+
+/* PHOTO */
+#photo{
+    display: block;
+    position: absolute;
+
+    animation-name: windows;
+                    animation-duration: 1s;
+                    animation-delay: 0.25s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: both;
+}
+#pbar{
+    width: 240px;
+}
+#pltt{
+    
+    color: #E3448E;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 250px;
+    top: 11px;
+    left: -90px;
+    padding: 10px;
+    background-color: #FFF5FB;
+    border: 0 solid;
+    border-radius: 10px;
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+
+    animation-name: tt;
+                    animation-duration: 0.25s;
+                    animation-timing-function: ease-in-out;
+}
+#pbar:hover + #pltt {
+  display: block;
+}
+#pttt{
+    position: relative;
+    font-size: 15px;
+    bottom: 5px;
+}
+#selfie{
+    display:block;
+    position: absolute;
+    width: 244px;
+    border-style: solid;
+    border-width: 0px 3px 3px 3px;
+    border-color: #FEA9D4;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px #FEA9D4;
+}
+
+/* BIO */
+#bio{
+    display:block;
+    position: absolute;
+
+    animation-name: windows;
+                    animation-duration: 1s;
+                    animation-delay: 1.75s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: both;
+}
+#biocontainer{
+    display:block;
+    position: absolute;
+    top: 320px;
+    left: 75px;
+}
+#bbar{
+    width: 760px;
+}
+#bioc{
+    display:block;
+    position: absolute;
+    width: 724px;
+    padding: 20px;
+    background-color: #FFF5FB;
+    border-style: solid;
+    border-width: 0px 3px 3px 3px;
+    border-color: #FEA9D4;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px #FEA9D4
+}
+h1, .bio{
+    color: #E3448E;
+    font-family: "Fredoka", sans-serif;
+}
+.bio{
+    font-size: 18px;
+}
+
+/* FOLDERS */
+#folders{
+    display: block;
+    position: absolute;
+
+    animation-name: windows;
+                    animation-duration: 1s;
+                    animation-delay: 0.75s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: both;
+}
+#folder01, #folder02{
+    display: block;
+    position: absolute;
+    width: 240px;
+    background-color: #FFD3EB;;
+    padding: 8px;
+    border: 0 solid;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px #FEA9D4;
+    transition: transform 0.25s ease-in-out;
+}
+#folder01{
+    left: 350px;
+    top: 70px;
+}
+#folder02{
+    left: 490px;
+    top: 165px;
+}
+.fi{
+    width: 48px;
+    display: inline;
+    position: relative;
+    top: 2.25px;
+    left: 8px;
+}
+#folder01:hover, #folder02:hover{
+    transform: translateY(-8px);
+}
+.fl{
+    display: inline;
+    position: relative;
+    left: 12px;
+    bottom: 14px;
+    color: #E3448E;
+    font-family: "Fredoka", sans-serif;
+}
+
+/* @MEDIA */
+#sicons{
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 58px;
+    padding: 8px;
+    left: 790px;
+    margin-top: 20px;
+    background-color: #FFF5FB;
+    border: 0 solid;
+    border-radius: 24px;
+
+    animation-name: windows;
+                    animation-duration: 1s;
+                    animation-delay: 1.25s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: both;
+}
+#stari {
+    position: absolute;
+    width: 28px;
+}
+#sitt{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 50px;
+    top: -16px;
+    left: 50px;
+    padding: 6px;
+    color: #E3448E;
+    background-color: #FFF5FB;
+    border: 0 solid;
+    border-radius: 7px;
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+
+    animation-name: tt;
+                    animation-duration: 0.25s;
+                    animation-timing-function: ease-in-out;
+}
+#sittt{
+    position: relative;
+    font-size: 15px;
+    bottom: 2.75px;
+}
+#sil:hover + #sitt {
+  display: block;
+}
+#hearti {
+    position: absolute;
+    width: 24px;
+    top: 40px;
+    left: 10px;
+}
+#hitt{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 125px;
+    top: 13.75px;
+    left: 50px;
+    padding: 6px;
+    color: #E3448E;
+    background-color: #FFF5FB;
+    border: 0 solid;
+    border-radius: 7px;
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+
+    animation-name: tt;
+                    animation-duration: 0.25s;
+                    animation-timing-function: ease-in-out;
+}
+#hittt{
+    position: relative;
+    font-size: 15px;
+    bottom: 2.75px;
+}
+#hil:hover + #hitt {
+  display: block;
+}
+
+/* @MEDIA */
+@media only screen and (max-height: 750px){
+    #warning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: #FFE9F7;
+        text-align: center;
+        font-family: "Fredoka", sans-serif;
+        color: #E3448E;
+        }
+    }
+@media only screen and (max-width: 1150px){
+    #warning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: #FFE9F7;
+        text-align: center;
+        font-family: "Fredoka", sans-serif;
+        color: #E3448E;
+        }
+    }      
